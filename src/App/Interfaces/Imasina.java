@@ -2,6 +2,6 @@ package App.Interfaces;
 
 public interface Imasina {
     public abstract double lapTime();
-    public abstract String pneuri();
-    public abstract int nrLap();
+    public abstract void pneuri(String x);
+    public abstract void selectCircuit(String x);
 }

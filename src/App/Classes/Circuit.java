@@ -1,40 +1,53 @@
 package App.Classes;
 
-public class Circuit {
-    private int laps=0;
-    private int vreme= 0;
-    public Circuit(int laps, int vreme){
-        this.laps= laps;
-        this.vreme= vreme;
+public class Circuit  {
+    private double laptime=0.0;
+    private String nume_circuit="";
+    private int x=0;
+
+    public Circuit(String nume_circuit, double laptime){
+    this.nume_circuit=nume_circuit;
+    this.laptime=laptime;
+
     }
 
-    public int getLaps() {
-        return laps;
+    public String getNume_circuit() {
+        return nume_circuit;
     }
 
-    public void setLaps(int laps) {
-        this.laps = laps;
+    public void setNume_circuit(String nume_circuit) {
+        this.nume_circuit = nume_circuit;
     }
 
-    public int getVreme() {
-
-        return vreme;
+    public double getLaptime() {
+        return laptime;
     }
 
-    public void setVreme(int vreme) {
-        this.vreme = vreme;
+    public void setLaptime(double laptime) {
+        this.laptime = laptime;
     }
-
-    public String toString() {
-        if (vreme==1){
-            return "vremea este de cauciucuri de uscat";
+    public double timeLapCircuit(){
+        if("Monza".equals(nume_circuit)){
+            x=1;
         }
-        else if(vreme==2){
-            return "vremea este de cauciucuri intermediare";
+        else if("Austria".equals(nume_circuit)){
+            x=2;
         }
-        else if(vreme==3){
-            return "vremea este de cauciucuri de umed";
+        else if("Monaco".equals(nume_circuit)){
+            x=3;
         }
-        return ".";
+        switch (x){
+            case 1:
+                setLaptime(1.20);
+                break;
+            case 2:
+                setLaptime(1.06);
+                break;
+            case 3:
+                setLaptime(1.15);
+                break;
+        }
+        return laptime;
     }
 }
+
