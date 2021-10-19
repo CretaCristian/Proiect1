@@ -172,11 +172,11 @@ public class MyGui {
                     for(int i=0;i<nrLaps;++i){
 
                 d[0].setLapTime(d[0].getLapTime() +redBull.lapTime() );
-                d[1].setLapTime(d[0].getLapTime() +mercedes.lapTime() );
-                d[2].setLapTime(d[0].getLapTime() +ferrari.lapTime() );
-                d[3].setLapTime(d[0].getLapTime() +redBull.lapTime() );
-                d[4].setLapTime(d[0].getLapTime() +mercedes.lapTime() );
-                d[5].setLapTime(d[0].getLapTime() +ferrari.lapTime() );
+                d[1].setLapTime(d[1].getLapTime() +mercedes.lapTime() );
+                d[2].setLapTime(d[2].getLapTime() +ferrari.lapTime() );
+                d[3].setLapTime(d[3].getLapTime() +redBull.lapTime() );
+                d[4].setLapTime(d[4].getLapTime() +mercedes.lapTime() );
+                d[5].setLapTime(d[5].getLapTime() +ferrari.lapTime() );
                     }
 
                 for (int i = 0; i < 5; ++i) {
