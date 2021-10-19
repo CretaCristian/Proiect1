@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[]args){
-        JFrame frame=new JFrame("Cofetarie");
+        JFrame frame=new JFrame("Simulator F1");
         MyGui gui= new MyGui();
         frame.setContentPane(gui.panelprincipal);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
