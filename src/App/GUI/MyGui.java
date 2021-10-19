@@ -169,17 +169,19 @@ public class MyGui {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelLeft.setVisible(false);
+                    for(int i=0;i<nrLaps;++i){
 
-                d[0].setLapTime(redBull.lapTime() * nrLaps);
-                d[1].setLapTime(mercedes.lapTime() * nrLaps);
-                d[2].setLapTime(ferrari.lapTime() * nrLaps);
-                d[3].setLapTime(redBull.lapTime() * nrLaps);
-                d[4].setLapTime(mercedes.lapTime() * nrLaps);
-                d[5].setLapTime(ferrari.lapTime() * nrLaps);
+                d[0].setLapTime(d[0].getLapTime() +redBull.lapTime() );
+                d[1].setLapTime(d[0].getLapTime() +mercedes.lapTime() );
+                d[2].setLapTime(d[0].getLapTime() +ferrari.lapTime() );
+                d[3].setLapTime(d[0].getLapTime() +redBull.lapTime() );
+                d[4].setLapTime(d[0].getLapTime() +mercedes.lapTime() );
+                d[5].setLapTime(d[0].getLapTime() +ferrari.lapTime() );
+                    }
 
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < 5; ++i) {
                     int min_idx = i;
-                    for (int j = i + 1; j < 6; j++)
+                    for (int j = i + 1; j < 6; ++j)
                         if (d[j].getLapTime() < d[min_idx].getLapTime())
                             min_idx = j;
 

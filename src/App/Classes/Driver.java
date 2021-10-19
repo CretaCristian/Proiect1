@@ -34,6 +34,6 @@ public class Driver {
 
     @Override
     public String toString() {
-        return nume+" "+prenume+" "+masina+" :"+lapTime;
+        return prenume+" "+nume+" "+masina+" :"+lapTime;
     }
 }
