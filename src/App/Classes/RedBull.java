@@ -41,7 +41,7 @@ public class RedBull extends Strategie implements Imasina  {
 
     @Override
     public double lapTime() {
-        this.lapTime=super.lapTimePneuri()+rnd.nextDouble(0.15);
+        this.lapTime=super.lapTimePneuri()+rnd.nextDouble(0.1);
         return this.lapTime;
     }
 

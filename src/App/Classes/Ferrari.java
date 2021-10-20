@@ -42,7 +42,7 @@ public class Ferrari extends Strategie implements Imasina  {
 
     @Override
     public double lapTime() {
-        this.lapTime=super.lapTimePneuri()+rnd.nextDouble(0.30);
+        this.lapTime=super.lapTimePneuri()+rnd.nextDouble(0.20);
         return this.lapTime;
     }
 
